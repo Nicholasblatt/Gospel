@@ -11,7 +11,7 @@ export function AboutPage() {
       <p>
         My aim is simple: present the message of Jesus in a straightforward way,
         answer common questions, and equip people to move from curiosity to real
-        faith—repenting and believing the gospel. I'm not affiliated with any
+        faith - repenting and believing the gospel. I'm not affiliated with any
         church, and this site is not a church. I encourage any new believer to
         find a local church to belong to and to sit under preaching and receive
         pastoral care.
@@ -52,4 +52,3 @@ export function AboutPage() {
     </div>
   );
 }
-

@@ -33,7 +33,7 @@ export function HomePage() {
         <Link className="card cardLinkBlock homeSecondary" to="/passages">
           <div className="cardTitle">Passages</div>
           <div className="cardText">
-            Key texts from the Story and Questions—organized by category, with
+            Key texts from the Story and Questions - organized by category, with
             simple explanations and sources.
           </div>
           <div className="cardCta">Go to Passages →</div>
@@ -42,4 +42,3 @@ export function HomePage() {
     </div>
   );
 }
-

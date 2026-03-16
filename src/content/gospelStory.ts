@@ -92,7 +92,7 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       "but leads to death, eternal punishment, and separation from God in hell.",
     points: [
       "Sin is lawlessness: falling short of God’s perfect standard and breaking His commands.",
-      "Sin corrupts the heart, not just behavior; we’re unable to fix ourselves.",
+      "Sin corrupts the heart, not just behavior; by nature we are fallen and unable to fix ourselves.",
       "The wages of sin is death: what we earn is judgment. Physical death and eternal separation from God in hell.",
     ],
     scriptures: [
@@ -105,6 +105,11 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
         label: "Romans 6:23 (ESV)",
         translation: "ESV",
         url: buildEsvUrl("Romans 6:23 (ESV)"),
+      },
+      {
+        label: "Romans 5:12 (ESV)",
+        translation: "ESV",
+        url: buildEsvUrl("Romans 5:12 (ESV)"),
       },
       {
         label: "2 Thessalonians 1:9 (ESV)",
@@ -121,7 +126,7 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       "Jesus Christ is a real man in history and also truly God. He lived a sinless, perfect life. He humbled Himself: not clinging to His rights as God, but taking the form of a servant to save sinners.",
     points: [
       "Truly God and truly man: the eternal Son took on humanity without ceasing to be God.",
-      "He lived a sinless, perfect life—fully obedient, fulfilling God’s every law.",
+      "He lived a sinless, perfect life - fully obedient, fulfilling God’s every law.",
       "Though equal with God, He humbled Himself, taking the form of a servant for our salvation.",
     ],
     scriptures: [
@@ -210,10 +215,10 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
     title: "Response",
     subtitle: "Repent • believe • follow",
     summary:
-      "The gospel is not only information, it is God’s command. God calls you to repent and believe in the Lord Jesus Christ, because He will judge the world in righteousness and has given assurance by raising Jesus from the dead.",
+      "The gospel is not only information, it is God’s command. God calls you to repent and believe in the Lord Jesus Christ, because He will judge the world in righteousness and has given assurance by raising Jesus from the dead. No one responds rightly apart from the new birth He gives.",
     points: [
       "Repent: turn from sin and self-rule to God. Agreeing with Him about your guilt and need.",
-      "Believe: trust in the Lord Jesus Christ alone to save you. His death and resurrection, not your works.",
+      "Believe: trust in the Lord Jesus Christ Himself alone to save you. Not mere agreement with facts, but resting in Him, His death, and His resurrection, not your works.",
       "Assurance: if you have repented and believed in Christ, your confidence is not in your works but in Christ’s righteousness and God’s promise that there is now no condemnation for those who are in Christ Jesus.",
     ],
     scriptures: [
@@ -226,6 +231,11 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
         label: "Acts 16:31 (ESV)",
         translation: "ESV",
         url: buildEsvUrl("Acts 16:31 (ESV)"),
+      },
+      {
+        label: "John 3:3 (ESV)",
+        translation: "ESV",
+        url: buildEsvUrl("John 3:3 (ESV)"),
       },
       {
         label: "Romans 4:5 (ESV)",
@@ -245,4 +255,3 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
     ],
   },
 ];
-
