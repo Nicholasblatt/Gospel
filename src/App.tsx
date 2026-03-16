@@ -5,7 +5,6 @@ import { StoryPage } from "./pages/StoryPage";
 import { QuestionsPage } from "./pages/QuestionsPage";
 import { PassagesPage } from "./pages/PassagesPage";
 import { AboutPage } from "./pages/AboutPage";
-import { ContactPage } from "./pages/ContactPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 export function App() {
@@ -17,13 +16,12 @@ export function App() {
         <Route path="/questions" element={<QuestionsPage />} />
         <Route path="/passages" element={<PassagesPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/resources" element={<ContactPage />} />
-        <Route path="/contact" element={<Navigate to="/resources" replace />} />
+        <Route path="/resources" element={<Navigate to="/about" replace />} />
+        <Route path="/contact" element={<Navigate to="/about" replace />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );
 }
-
 

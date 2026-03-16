@@ -36,9 +36,6 @@ export function SiteLayout() {
             <NavLink to="/about" className={linkClassName}>
               About
             </NavLink>
-            <NavLink to="/resources" className={linkClassName}>
-              Resources
-            </NavLink>
           </nav>
         </div>
       </header>
@@ -50,13 +47,12 @@ export function SiteLayout() {
       <footer className="footer">
         <div className="footerInner">
           <div className="muted">
-            Built to present the gospel clearly. Please see About and Resources
-            for more information.
+            Built to present the gospel clearly. Please see About for more
+            information and next steps.
           </div>
         </div>
       </footer>
     </div>
   );
 }
-
 

@@ -5,7 +5,7 @@ export type QuestionAnswer = {
 };
 
 export const QUESTIONS: QuestionAnswer[] = [
-  // Westminster Shorter Catechism (Q1–Q107) with Scripture references.
+  // Question-and-answer content with Scripture references.
   {
     q: "What is the chief end of man?",
     a: "Man’s chief end is to glorify God, and to enjoy him for ever.",
@@ -748,5 +748,4 @@ export const QUESTIONS: QuestionAnswer[] = [
     ],
   },
 ];
-
 

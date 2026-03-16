@@ -1,3 +1,5 @@
+import { buildEsvUrl } from "../utils/esv";
+
 export type ScriptureRef = {
   label: string;
   text?: string;
@@ -31,22 +33,22 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "Genesis 1:1 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Genesis+1:1/",
+        url: buildEsvUrl("Genesis 1:1 (ESV)"),
       },
       {
         label: "Isaiah 6:3 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Isaiah+6:3/",
+        url: buildEsvUrl("Isaiah 6:3 (ESV)"),
       },
       {
         label: "Habakkuk 1:13 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Habakkuk+1:13/",
+        url: buildEsvUrl("Habakkuk 1:13 (ESV)"),
       },
       {
         label: "Romans 3:23 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Romans+3:23/",
+        url: buildEsvUrl("Romans 3:23 (ESV)"),
       },
     ],
   },
@@ -66,17 +68,17 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "Genesis 1:27 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Genesis+1:27/",
+        url: buildEsvUrl("Genesis 1:27 (ESV)"),
       },
       {
         label: "Acts 17:28 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Acts+17:28/",
+        url: buildEsvUrl("Acts 17:28 (ESV)"),
       },
       {
         label: "Psalm 16:11 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Psalm+16:11/",
+        url: buildEsvUrl("Psalm 16:11 (ESV)"),
       },
     ],
   },
@@ -97,17 +99,17 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "Romans 3:23 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Romans+3:23/",
+        url: buildEsvUrl("Romans 3:23 (ESV)"),
       },
       {
         label: "Romans 6:23 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Romans+6:23/",
+        url: buildEsvUrl("Romans 6:23 (ESV)"),
       },
       {
         label: "2 Thessalonians 1:9 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/2+Thessalonians+1:9/",
+        url: buildEsvUrl("2 Thessalonians 1:9 (ESV)"),
       },
     ],
   },
@@ -126,17 +128,17 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "John 1:14 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/John+1:14/",
+        url: buildEsvUrl("John 1:14 (ESV)"),
       },
       {
         label: "Philippians 2:6–8 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Philippians+2:6-8/",
+        url: buildEsvUrl("Philippians 2:6-8 (ESV)"),
       },
       {
         label: "Hebrews 4:15 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Hebrews+4:15/",
+        url: buildEsvUrl("Hebrews 4:15 (ESV)"),
       },
     ],
   },
@@ -155,17 +157,17 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "Isaiah 53:6 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Isaiah+53:6/",
+        url: buildEsvUrl("Isaiah 53:6 (ESV)"),
       },
       {
         label: "2 Corinthians 5:21 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/2+Corinthians+5:21/",
+        url: buildEsvUrl("2 Corinthians 5:21 (ESV)"),
       },
       {
         label: "Philippians 3:9 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Philippians+3:9/",
+        url: buildEsvUrl("Philippians 3:9 (ESV)"),
       },
     ],
   },
@@ -184,22 +186,22 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "1 Corinthians 15:4-6 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/1+Corinthians+15:4-6/",
+        url: buildEsvUrl("1 Corinthians 15:4-6 (ESV)"),
       },
       {
         label: "1 Corinthians 15:17 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/1+Corinthians+15:17/",
+        url: buildEsvUrl("1 Corinthians 15:17 (ESV)"),
       },
       {
         label: "Acts 2:31-36 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Acts+2:31-36/",
+        url: buildEsvUrl("Acts 2:31-36 (ESV)"),
       },
       {
         label: "Romans 1:4 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Romans+1:4/",
+        url: buildEsvUrl("Romans 1:4 (ESV)"),
       },
     ],
   },
@@ -218,30 +220,29 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
       {
         label: "Acts 17:30–31 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Acts+17:30-31/",
+        url: buildEsvUrl("Acts 17:30-31 (ESV)"),
       },
       {
         label: "Acts 16:31 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Acts+16:31/",
+        url: buildEsvUrl("Acts 16:31 (ESV)"),
       },
       {
         label: "Romans 4:5 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Romans+4:5/",
+        url: buildEsvUrl("Romans 4:5 (ESV)"),
       },
       {
         label: "Philippians 3:9 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Philippians+3:9/",
+        url: buildEsvUrl("Philippians 3:9 (ESV)"),
       },
       {
         label: "Romans 8:1 (ESV)",
         translation: "ESV",
-        url: "https://www.esv.org/Romans+8:1/",
+        url: buildEsvUrl("Romans 8:1 (ESV)"),
       },
     ],
   },
 ];
-
 

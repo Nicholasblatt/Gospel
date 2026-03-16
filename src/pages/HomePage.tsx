@@ -24,7 +24,8 @@ export function HomePage() {
         <Link className="card cardLinkBlock homeSecondary" to="/questions">
           <div className="cardTitle">Questions</div>
           <div className="cardText">
-            A plain-English Q&amp;A through the Westminster Shorter Catechism.
+            A plain-English question-and-answer section on key truths of the
+            Christian faith.
           </div>
           <div className="cardCta">Go to Questions →</div>
         </Link>
@@ -41,5 +42,4 @@ export function HomePage() {
     </div>
   );
 }
-
 

@@ -63,18 +63,18 @@ a {
   text-decoration: none;
 }
 
-.prose a {
+.prose a:not(.button):not(.verseButton) {
   color: var(--accent);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
 
-.prose a:hover {
+.prose a:not(.button):not(.verseButton):hover {
   color: rgba(110, 231, 255, 0.92);
 }
 
-.prose a:focus {
+.prose a:not(.button):not(.verseButton):focus {
   outline: none;
   border-radius: 6px;
   box-shadow: 0 0 0 4px rgba(110, 231, 255, 0.12);
@@ -685,6 +685,9 @@ a {
 }
 
 .verseButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   appearance: none;
   border: 0;
   background: rgba(255, 255, 255, 0.05);
@@ -694,9 +697,19 @@ a {
   border-radius: 999px;
   font-size: 12.5px;
   cursor: pointer;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.verseButton:link,
+.verseButton:visited,
+.verseButton:active {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
 }
 
 .verseButton:hover {
+  color: rgba(255, 255, 255, 0.92);
   border-color: rgba(110, 231, 255, 0.28);
   background: rgba(110, 231, 255, 0.08);
 }
@@ -744,4 +757,3 @@ a {
     transform: none;
   }
 }
-

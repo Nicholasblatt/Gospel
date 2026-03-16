@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ScriptureChip } from "../components/ScriptureChip";
 import { QUESTIONS } from "../content/questions";
+import { buildEsvUrl } from "../utils/esv";
 
 type Section = {
   id: string;
@@ -9,7 +10,7 @@ type Section = {
   end: number; // inclusive (0-based)
 };
 
-// Sections based on the Westminster Shorter Catechism sequence.
+// Sections based on the question-and-answer sequence.
 // Note: We intentionally make "All questions" and the final section open-ended so
 // the UI stays correct even if you add more items to QUESTIONS.
 const SECTIONS: Section[] = [
@@ -71,8 +72,8 @@ export function QuestionsPage() {
     <div className="container prose">
       <h1 className="h1">Questions and Answers</h1>
       <p className="lede">
-        Browse and search the Westminster Shorter Catechism (Q1–Q107), with
-        Scripture references.
+        Browse and search this question-and-answer section, with Scripture
+        references.
       </p>
 
       <div className="qaControls">
@@ -141,7 +142,11 @@ export function QuestionsPage() {
                       style={{ marginTop: 8, flexWrap: "wrap" }}
                     >
                       {item.refs.map((r) => (
-                        <ScriptureChip key={r} label={r} />
+                        <ScriptureChip
+                          key={r}
+                          label={`${r} (ESV)`}
+                          url={buildEsvUrl(r)}
+                        />
                       ))}
                     </div>
                   </div>
@@ -177,5 +182,3 @@ export function QuestionsPage() {
     </div>
   );
 }
-
-

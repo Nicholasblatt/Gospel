@@ -1,3 +1,5 @@
+import { buildEsvUrl } from "../utils/esv";
+
 export type Passage = {
   id: string;
   reference: string;
@@ -23,7 +25,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "gen-1-1",
         reference: "Genesis 1:1 (ESV)",
-        esvUrl: "https://www.esv.org/Genesis+1:1/",
+        esvUrl: buildEsvUrl("Genesis 1:1 (ESV)"),
         explain: [
           "God is not part of the universe; He made it. That means He owns it and sets the terms for life.",
           "If God is Creator, we are not self-made and self-ruled. We are accountable creatures, not independent masters.",
@@ -36,7 +38,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "isa-6-3",
         reference: "Isaiah 6:3 (ESV)",
-        esvUrl: "https://www.esv.org/Isaiah+6:3/",
+        esvUrl: buildEsvUrl("Isaiah 6:3 (ESV)"),
         explain: [
           "God’s holiness is not a mild improvement on us; it is blazing moral purity; He is “set apart” from all sin.",
           "When you see God as holy, sin stops looking small. It becomes guilt before the Judge, not just “bad habits.”",
@@ -50,7 +52,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "hab-1-13",
         reference: "Habakkuk 1:13 (ESV)",
-        esvUrl: "https://www.esv.org/Habakkuk+1:13/",
+        esvUrl: buildEsvUrl("Habakkuk 1:13 (ESV)"),
         explain: [
           "God is not morally indifferent. His purity means He cannot approve evil or treat guilt as harmless.",
           "If God is truly just, forgiveness cannot be a shrug. The gospel must answer the question: how can God pardon and still be righteous?",
@@ -63,7 +65,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-3-23",
         reference: "Romans 3:23 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+3:23/",
+        esvUrl: buildEsvUrl("Romans 3:23 (ESV)"),
         explain: [
           "God’s standard is not “better than average.” It is His own glory and holiness; and everyone comes up short.",
           "This levels the room: the respectable sinner and the scandalous sinner both need mercy from the same Judge.",
@@ -83,7 +85,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "gen-1-27",
         reference: "Genesis 1:27 (ESV)",
-        esvUrl: "https://www.esv.org/Genesis+1:27/",
+        esvUrl: buildEsvUrl("Genesis 1:27 (ESV)"),
         explain: [
           "You are not an accident. God made you in His image; meaning you have real dignity and real responsibility before Him.",
           "Sin is not just breaking rules; it is dishonoring the God whose image you bear.",
@@ -96,7 +98,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "acts-17-28",
         reference: "Acts 17:28 (ESV)",
-        esvUrl: "https://www.esv.org/Acts+17:28/",
+        esvUrl: buildEsvUrl("Acts 17:28 (ESV)"),
         explain: [
           "God is not far away. Every breath depends on Him; so every life is lived before Him, whether we admit it or not.",
           "That’s why the gospel is not a self-help program. It is reconciliation with the God you already owe everything to.",
@@ -109,7 +111,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "ps-16-11",
         reference: "Psalm 16:11 (ESV)",
-        esvUrl: "https://www.esv.org/Psalm+16:11/",
+        esvUrl: buildEsvUrl("Psalm 16:11 (ESV)"),
         explain: [
           "The deepest joy people chase is found in God Himself: His presence, His favor, His fellowship.",
           "Sin is the heart turning away from that true happiness and chasing broken joys that cannot satisfy.",
@@ -129,7 +131,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-3-23-sin",
         reference: "Romans 3:23 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+3:23/",
+        esvUrl: buildEsvUrl("Romans 3:23 (ESV)"),
         explain: [
           "Sin is not merely mistakes. It is falling short of God’s glory; His rightful claim over us.",
           "When God is the standard, “good enough” disappears. Everyone needs grace, not excuses.",
@@ -142,7 +144,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-6-23",
         reference: "Romans 6:23 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+6:23/",
+        esvUrl: buildEsvUrl("Romans 6:23 (ESV)"),
         explain: [
           "Sin pays wages. What we earn is death: God’s judgment, not merely consequences inside this world.",
           "That makes the gospel urgent: the problem is not “low self-esteem,” but guilt before God and the sentence that follows.",
@@ -155,7 +157,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "2th-1-9",
         reference: "2 Thessalonians 1:9 (ESV)",
-        esvUrl: "https://www.esv.org/2+Thessalonians+1:9/",
+        esvUrl: buildEsvUrl("2 Thessalonians 1:9 (ESV)"),
         explain: [
           "Judgment is real and lasting: separation from the Lord and the loss of His favor.",
           "If sin deserves this, then the cross is not decoration; it is necessity. Only a Savior can deliver from the coming wrath.",
@@ -175,7 +177,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "john-1-14",
         reference: "John 1:14 (ESV)",
-        esvUrl: "https://www.esv.org/John+1:14/",
+        esvUrl: buildEsvUrl("John 1:14 (ESV)"),
         explain: [
           "Christianity begins with an event: the eternal Son truly took our nature; God came near in Jesus.",
           "This is not a symbol. God dealt with our problem by sending a real Mediator into history.",
@@ -188,7 +190,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "phil-2-6-8",
         reference: "Philippians 2:6–8 (ESV)",
-        esvUrl: "https://www.esv.org/Philippians+2:6-8/",
+        esvUrl: buildEsvUrl("Philippians 2:6-8 (ESV)"),
         explain: [
           "The Son did not stop being God; He humbled Himself by taking the form of a servant and embracing the cross.",
           "The gospel is not “God helps the worthy,” but “God stoops to save the unworthy.”",
@@ -201,7 +203,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "heb-4-15",
         reference: "Hebrews 4:15 (ESV)",
-        esvUrl: "https://www.esv.org/Hebrews+4:15/",
+        esvUrl: buildEsvUrl("Hebrews 4:15 (ESV)"),
         explain: [
           "Jesus understands weakness without sharing our guilt. He was tempted, yet without sin.",
           "A guilty person cannot pay another’s debt. A spotless Savior can stand in the sinner’s place.",
@@ -221,7 +223,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "isa-53-6",
         reference: "Isaiah 53:6 (ESV)",
-        esvUrl: "https://www.esv.org/Isaiah+53:6/",
+        esvUrl: buildEsvUrl("Isaiah 53:6 (ESV)"),
         explain: [
           "We all wander; sin is universal. Each person chooses their own way instead of God’s.",
           "The hope is substitution: God lays our guilt on the Servant. Salvation is not denial; it is a transfer: our sin to Christ.",
@@ -234,7 +236,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "2cor-5-21",
         reference: "2 Corinthians 5:21 (ESV)",
-        esvUrl: "https://www.esv.org/2+Corinthians+5:21/",
+        esvUrl: buildEsvUrl("2 Corinthians 5:21 (ESV)"),
         explain: [
           "Here is the great exchange: our sin is counted to Christ; His righteousness is counted to us.",
           "That’s why salvation is not “do better.” It is receiving what Christ achieved and God freely credits to sinners.",
@@ -247,7 +249,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "phil-3-9-cross",
         reference: "Philippians 3:9 (ESV)",
-        esvUrl: "https://www.esv.org/Philippians+3:9/",
+        esvUrl: buildEsvUrl("Philippians 3:9 (ESV)"),
         explain: [
           "The righteousness that saves is “not my own.” It comes from God through faith in Christ.",
           "So assurance can’t rest on your performance. It rests on Christ’s righteousness received by faith.",
@@ -267,7 +269,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "1cor-15-4-6",
         reference: "1 Corinthians 15:4–6 (ESV)",
-        esvUrl: "https://www.esv.org/1+Corinthians+15:4-6/",
+        esvUrl: buildEsvUrl("1 Corinthians 15:4-6 (ESV)"),
         explain: [
           "The resurrection was public: many witnesses saw the risen Christ, including over 500 at one time.",
           "Faith is not pretending; it is trusting what God has done in history and what He promises because of it.",
@@ -280,7 +282,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "1cor-15-17",
         reference: "1 Corinthians 15:17 (ESV)",
-        esvUrl: "https://www.esv.org/1+Corinthians+15:17/",
+        esvUrl: buildEsvUrl("1 Corinthians 15:17 (ESV)"),
         explain: [
           "If Christ did not rise, Christianity collapses and guilt remains. The resurrection is God’s public “Yes” to Christ’s work.",
           "So the resurrection is not an optional add-on; it is essential to the gospel.",
@@ -293,7 +295,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "acts-2-31-36",
         reference: "Acts 2:31–36 (ESV)",
-        esvUrl: "https://www.esv.org/Acts+2:31-36/",
+        esvUrl: buildEsvUrl("Acts 2:31-36 (ESV)"),
         explain: [
           "The risen Jesus is exalted as Lord and Christ; He is not only a teacher; He is the reigning King.",
           "That means the gospel calls for surrender: faith is receiving a Savior and bowing to a Lord.",
@@ -306,7 +308,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-1-4",
         reference: "Romans 1:4 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+1:4/",
+        esvUrl: buildEsvUrl("Romans 1:4 (ESV)"),
         explain: [
           "The resurrection publicly declares Jesus as the Son of God in power.",
           "So the gospel is not “one path among many.” God has vindicated His Son and commands all to listen to Him.",
@@ -326,7 +328,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "acts-17-30-31",
         reference: "Acts 17:30–31 (ESV)",
-        esvUrl: "https://www.esv.org/Acts+17:30-31/",
+        esvUrl: buildEsvUrl("Acts 17:30-31 (ESV)"),
         explain: [
           "God commands repentance; this is not optional advice. It is the Creator’s command to His creatures.",
           "Judgment is coming, and the resurrection is God’s public assurance that Jesus is the appointed Judge.",
@@ -339,7 +341,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "acts-16-31",
         reference: "Acts 16:31 (ESV)",
-        esvUrl: "https://www.esv.org/Acts+16:31/",
+        esvUrl: buildEsvUrl("Acts 16:31 (ESV)"),
         explain: [
           "The call is simple: believe in the Lord Jesus and you will be saved.",
           "Faith is not confidence in your improvement plan. It is resting on a Person, Jesus Christ, as your only hope.",
@@ -352,7 +354,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-4-5",
         reference: "Romans 4:5 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+4:5/",
+        esvUrl: buildEsvUrl("Romans 4:5 (ESV)"),
         explain: [
           "God justifies the ungodly; meaning you don’t clean yourself up first and then qualify.",
           "Faith is the opposite of earning. It is leaning on Christ instead of leaning on works.",
@@ -365,7 +367,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "phil-3-9-response",
         reference: "Philippians 3:9 (ESV)",
-        esvUrl: "https://www.esv.org/Philippians+3:9/",
+        esvUrl: buildEsvUrl("Philippians 3:9 (ESV)"),
         explain: [
           "The righteousness you need is “not your own.” You receive it through faith in Christ.",
           "So the response is to abandon self-trust and rest in Christ alone for acceptance with God.",
@@ -378,7 +380,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-8-1-response",
         reference: "Romans 8:1 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+8:1/",
+        esvUrl: buildEsvUrl("Romans 8:1 (ESV)"),
         explain: [
           "If you are in Christ, there is no condemnation; God’s courtroom verdict has changed.",
           "This comfort is rooted in Christ’s finished work, not in your moods or your record of performance.",
@@ -401,7 +403,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "2tim-3-16-17",
         reference: "2 Timothy 3:16–17 (ESV)",
-        esvUrl: "https://www.esv.org/2+Timothy+3:16-17/",
+        esvUrl: buildEsvUrl("2 Timothy 3:16–17 (ESV)"),
         explain: [
           "The Bible is God-breathed: its authority comes from God, not from the church’s approval or our preferences.",
           "Scripture doesn’t only inform; it trains; correcting us and shaping us into people fitted for good works.",
@@ -414,7 +416,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "2pet-1-20-21",
         reference: "2 Peter 1:20–21 (ESV)",
-        esvUrl: "https://www.esv.org/2+Peter+1:20-21/",
+        esvUrl: buildEsvUrl("2 Peter 1:20–21 (ESV)"),
         explain: [
           "Scripture did not originate in human imagination. God spoke through human authors by the Holy Spirit.",
           "That means the Bible is trustworthy: it carries God’s intent and God’s authority.",
@@ -427,7 +429,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "ps-19-7-11",
         reference: "Psalm 19:7–11 (ESV)",
-        esvUrl: "https://www.esv.org/Psalm+19:7-11/",
+        esvUrl: buildEsvUrl("Psalm 19:7–11 (ESV)"),
         explain: [
           "God’s Word revives and restores: it converts the soul and gives wisdom where we are blind.",
           "It both warns and rewards; exposing sin and showing the sweetness of walking with God.",
@@ -440,7 +442,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "john-17-17",
         reference: "John 17:17 (ESV)",
-        esvUrl: "https://www.esv.org/John+17:17/",
+        esvUrl: buildEsvUrl("John 17:17 (ESV)"),
         explain: [
           "God makes people holy by truth; not by vague inspiration. The Word is God’s chosen instrument to sanctify.",
           "So spiritual growth is not mainly technique; it is living under the Word with faith and obedience.",
@@ -461,7 +463,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "deut-6-4",
         reference: "Deuteronomy 6:4 (ESV)",
-        esvUrl: "https://www.esv.org/Deuteronomy+6:4/",
+        esvUrl: buildEsvUrl("Deuteronomy 6:4 (ESV)"),
         explain: [
           "God is one: there is no rival, no equal, and no other true God.",
           "That means worship can’t be divided; God is not first among many, but the only Lord.",
@@ -474,7 +476,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "john-4-24",
         reference: "John 4:24 (ESV)",
-        esvUrl: "https://www.esv.org/John+4:24/",
+        esvUrl: buildEsvUrl("John 4:24 (ESV)"),
         explain: [
           "God is Spirit. He is not limited like created things, and He can’t be contained or reduced to an image.",
           "True worship is not mainly location or ritual; it is heart-level worship in truth.",
@@ -487,7 +489,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "matt-28-19",
         reference: "Matthew 28:19 (ESV)",
-        esvUrl: "https://www.esv.org/Matthew+28:19/",
+        esvUrl: buildEsvUrl("Matthew 28:19 (ESV)"),
         explain: [
           "The one Name is shared by Father, Son, and Holy Spirit: one God, three persons.",
           "Christian faith is not generic theism. It is fellowship with the triune God.",
@@ -500,7 +502,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "2cor-13-14",
         reference: "2 Corinthians 13:14 (ESV)",
-        esvUrl: "https://www.esv.org/2+Corinthians+13:14/",
+        esvUrl: buildEsvUrl("2 Corinthians 13:14 (ESV)"),
         explain: [
           "Paul blesses the church with grace (from the Son), love (from the Father), and fellowship (by the Spirit).",
           "This is not abstract theology: the Trinity is the shape of Christian comfort and life with God.",
@@ -521,7 +523,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "eph-1-11",
         reference: "Ephesians 1:11 (ESV)",
-        esvUrl: "https://www.esv.org/Ephesians+1:11/",
+        esvUrl: buildEsvUrl("Ephesians 1:11 (ESV)"),
         explain: [
           "God works all things according to His will. History is not random, and your life is not outside His rule.",
           "This doesn’t make us passive; it makes us secure. God is wise and purposeful, even when we can’t see the whole plan.",
@@ -534,7 +536,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-11-36",
         reference: "Romans 11:36 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+11:36/",
+        esvUrl: buildEsvUrl("Romans 11:36 (ESV)"),
         explain: [
           "Everything is from God, through God, and to God. He is the source, sustainer, and goal of all things.",
           "That puts us in our place: life is not ultimately about our glory, but His.",
@@ -547,7 +549,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "matt-10-29-31",
         reference: "Matthew 10:29–31 (ESV)",
-        esvUrl: "https://www.esv.org/Matthew+10:29-31/",
+        esvUrl: buildEsvUrl("Matthew 10:29–31 (ESV)"),
         explain: [
           "God’s providence reaches down to sparrows; and up to you. Nothing is overlooked; nothing is outside His care.",
           "This is meant to quiet fear: your Father’s rule is personal, not cold.",
@@ -568,7 +570,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "gen-2-16-17",
         reference: "Genesis 2:16–17 (ESV)",
-        esvUrl: "https://www.esv.org/Genesis+2:16-17/",
+        esvUrl: buildEsvUrl("Genesis 2:16–17 (ESV)"),
         explain: [
           "God gave Adam a real command with a real consequence. Sin is not inevitable fate; it is disobedience to a holy Lord.",
           "The warning shows that God’s rule is just: life under His word brings life; rejecting His word brings death.",
@@ -581,7 +583,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-5-12",
         reference: "Romans 5:12 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+5:12/",
+        esvUrl: buildEsvUrl("Romans 5:12 (ESV)"),
         explain: [
           "Sin entered through one man, and death through sin. The Bible treats Adam as a representative head, not a private individual.",
           "This explains why the problem is deeper than bad examples: we are born into a world and a nature damaged by sin.",
@@ -594,7 +596,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "eph-2-1-3",
         reference: "Ephesians 2:1–3 (ESV)",
-        esvUrl: "https://www.esv.org/Ephesians+2:1-3/",
+        esvUrl: buildEsvUrl("Ephesians 2:1–3 (ESV)"),
         explain: [
           "Apart from Christ, we are spiritually dead; unable to revive ourselves by effort or good intentions.",
           "Our problem is not only what we do; it is what we are by nature: bent away from God and deserving His wrath.",
@@ -615,7 +617,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "deut-18-15",
         reference: "Deuteronomy 18:15 (ESV)",
-        esvUrl: "https://www.esv.org/Deuteronomy+18:15/",
+        esvUrl: buildEsvUrl("Deuteronomy 18:15 (ESV)"),
         explain: [
           "God promised a greater Prophet; one who would speak God’s word with final authority.",
           "So saving faith listens: Christ does not merely offer advice; He reveals God’s will for our salvation.",
@@ -628,7 +630,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "heb-7-25",
         reference: "Hebrews 7:25 (ESV)",
-        esvUrl: "https://www.esv.org/Hebrews+7:25/",
+        esvUrl: buildEsvUrl("Hebrews 7:25 (ESV)"),
         explain: [
           "Jesus saves completely, not halfway, because He lives to intercede. His priesthood is living and lasting.",
           "Believers’ confidence rests not in the strength of their grip on God, but in Christ’s ongoing ministry for them.",
@@ -641,7 +643,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "ps-110-1-2",
         reference: "Psalm 110:1–2 (ESV)",
-        esvUrl: "https://www.esv.org/Psalm+110:1-2/",
+        esvUrl: buildEsvUrl("Psalm 110:1–2 (ESV)"),
         explain: [
           "The Messiah reigns at God’s right hand. Christ is not only Savior; He is King over all.",
           "His rule is for the good of His people; subduing enemies and keeping His church.",
@@ -662,7 +664,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "eph-2-8-9",
         reference: "Ephesians 2:8–9 (ESV)",
-        esvUrl: "https://www.esv.org/Ephesians+2:8-9/",
+        esvUrl: buildEsvUrl("Ephesians 2:8–9 (ESV)"),
         explain: [
           "Salvation is by grace, not by achievement. Faith receives; it does not earn.",
           "This kills boasting and comforts the weak: the ground of salvation is God’s gift, not your résumé.",
@@ -675,7 +677,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-3-24-26",
         reference: "Romans 3:24–26 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+3:24-26/",
+        esvUrl: buildEsvUrl("Romans 3:24–26 (ESV)"),
         explain: [
           "God justifies sinners freely, yet righteously: Christ’s blood satisfies justice so God can pardon without becoming unjust.",
           "The cross shows God’s righteousness; He does not ignore sin; He deals with it in the Substitute.",
@@ -688,7 +690,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-5-1",
         reference: "Romans 5:1 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+5:1/",
+        esvUrl: buildEsvUrl("Romans 5:1 (ESV)"),
         explain: [
           "Justification brings peace with God; not merely inner calm, but the end of hostility and guilt in God’s courtroom.",
           "This peace comes through faith, because faith unites us to Christ; the Peace-maker.",
@@ -701,7 +703,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "watson-repentance-proof",
         reference: "Acts 3:19 (ESV)",
-        esvUrl: "https://www.esv.org/Acts+3:19/",
+        esvUrl: buildEsvUrl("Acts 3:19 (ESV)"),
         explain: [
           "Repentance is a real turning: not excuses, not penance, but a change of mind and direction toward God.",
           "God promises refreshing mercy to those who turn; repentance is the doorway to comfort, not despair.",
@@ -722,7 +724,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "matt-22-37-40",
         reference: "Matthew 22:37–40 (ESV)",
-        esvUrl: "https://www.esv.org/Matthew+22:37-40/",
+        esvUrl: buildEsvUrl("Matthew 22:37–40 (ESV)"),
         explain: [
           "God’s law is love: wholehearted love for God and real love for neighbor.",
           "This shows how deep sin is: we don’t merely fail rules; we fail love; and we need a changed heart, not a paint job.",
@@ -735,7 +737,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "ex-20-3",
         reference: "Exodus 20:3 (ESV)",
-        esvUrl: "https://www.esv.org/Exodus+20:3/",
+        esvUrl: buildEsvUrl("Exodus 20:3 (ESV)"),
         explain: [
           "The first commandment forbids rivals: God must be God to you, not an accessory.",
           "Idolatry is not only statues; it is the heart trusting, fearing, and loving something more than God.",
@@ -748,7 +750,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "ex-20-8",
         reference: "Exodus 20:8 (ESV)",
-        esvUrl: "https://www.esv.org/Exodus+20:8/",
+        esvUrl: buildEsvUrl("Exodus 20:8 (ESV)"),
         explain: [
           "God commands time set apart for worship and rest; not because He needs it, but because we do.",
           "A weekly pattern trains the soul: God is central, and our lives are not meant to be endless self-driven striving.",
@@ -761,7 +763,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-13-9-10",
         reference: "Romans 13:9–10 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+13:9-10/",
+        esvUrl: buildEsvUrl("Romans 13:9–10 (ESV)"),
         explain: [
           "Love fulfills the law: not love as sentiment, but love that refuses harm and actively seeks neighbor’s good.",
           "This guards against both legalism (rules without love) and lawlessness (love without obedience).",
@@ -782,7 +784,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "acts-2-38-39",
         reference: "Acts 2:38–39 (ESV)",
-        esvUrl: "https://www.esv.org/Acts+2:38-39/",
+        esvUrl: buildEsvUrl("Acts 2:38–39 (ESV)"),
         explain: [
           "Baptism is tied to repentance and faith, and God’s covenant promise reaches to households through generations.",
           "The sign doesn’t save by itself; it points to the saving Christ and calls us to embrace Him.",
@@ -795,7 +797,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "rom-6-3-4",
         reference: "Romans 6:3–4 (ESV)",
-        esvUrl: "https://www.esv.org/Romans+6:3-4/",
+        esvUrl: buildEsvUrl("Romans 6:3–4 (ESV)"),
         explain: [
           "Baptism pictures union with Christ: sharing in His death to sin and His resurrection life.",
           "The sign calls for reality: a new walk, not a new label only.",
@@ -808,7 +810,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "1cor-11-23-26",
         reference: "1 Corinthians 11:23–26 (ESV)",
-        esvUrl: "https://www.esv.org/1+Corinthians+11:23-26/",
+        esvUrl: buildEsvUrl("1 Corinthians 11:23–26 (ESV)"),
         explain: [
           "The Supper proclaims Christ’s death: it’s a preached gospel in bread and cup.",
           "It nourishes faith as we remember and receive Christ by faith, and it points forward to His return.",
@@ -829,7 +831,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "matt-6-9-13",
         reference: "Matthew 6:9–13 (ESV)",
-        esvUrl: "https://www.esv.org/Matthew+6:9-13/",
+        esvUrl: buildEsvUrl("Matthew 6:9–13 (ESV)"),
         explain: [
           "The Lord’s Prayer teaches priorities: God’s name and kingdom first, then daily needs, forgiveness, and deliverance.",
           "It trains us to pray as children to a Father: reverent, dependent, and hopeful.",
@@ -842,7 +844,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "phil-4-6-7",
         reference: "Philippians 4:6–7 (ESV)",
-        esvUrl: "https://www.esv.org/Philippians+4:6-7/",
+        esvUrl: buildEsvUrl("Philippians 4:6–7 (ESV)"),
         explain: [
           "Prayer is the believer’s antidote to anxious spinning: bring requests to God with thanksgiving.",
           "God’s peace is not denial of trouble; it is a guarded heart under God’s fatherly care.",
@@ -855,7 +857,7 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
       {
         id: "1john-5-14-15",
         reference: "1 John 5:14–15 (ESV)",
-        esvUrl: "https://www.esv.org/1+John+5:14-15/",
+        esvUrl: buildEsvUrl("1 John 5:14–15 (ESV)"),
         explain: [
           "Confidence in prayer rests on God’s will and God’s character, not on our mood.",
           "We ask as children under His word, trusting He hears and wisely answers.",
@@ -868,5 +870,3 @@ export const GOSPEL_PASSAGE_GROUPS: PassageGroup[] = [
     ],
   },
 ];
-
-
