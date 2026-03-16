@@ -4,52 +4,39 @@ export function HomePage() {
   return (
     <div className="container">
       <section className="hero">
-        <h1 className="h1">The gospel—told live, clearly, and honestly.</h1>
+        <h1 className="h1">A clear telling of the Gospel of Jesus Christ.</h1>
         <p className="lede">
-          Walk through the story and get straight answers to the big questions:
-          God, sin, Christ, the cross, repentance &amp; faith, assurance, and
-          what it means to follow Jesus.
+          Walk through the gospel story, get straight answers to some big questions,
+          and dig into the key passages.
         </p>
-        <div className="row gap">
-          <Link className="button" to="/story">
-            Start the Story
-          </Link>
-          <Link className="button buttonGhost" to="/questions">
-            Explore Questions
-          </Link>
-        </div>
       </section>
 
-      <section className="cardGrid">
-        <div className="card">
+      <section className="homeGrid" aria-label="Main sections">
+        <Link className="card cardLinkBlock homePrimary" to="/story">
           <div className="cardTitle">The Story</div>
           <div className="cardText">
-            A guided walkthrough: creation → fall → promise → Christ → cross →
-            resurrection → response.
+            A guided walkthrough: God → man → sin → Christ → cross → resurrection
+            → response.
           </div>
-          <Link className="cardLink" to="/story">
-            Go to the Story →
-          </Link>
-        </div>
-        <div className="card">
+          <div className="cardCta">Start the Story →</div>
+        </Link>
+
+        <Link className="card cardLinkBlock homeSecondary" to="/questions">
           <div className="cardTitle">Questions</div>
           <div className="cardText">
-            Clear, Bible-forward answers for seekers, skeptics, and new
-            Christians.
+            A plain-English Q&amp;A through the Westminster Shorter Catechism.
           </div>
-          <Link className="cardLink" to="/questions">
-            Go to Questions →
-          </Link>
-        </div>
-        <div className="card">
-          <div className="cardTitle">About</div>
+          <div className="cardCta">Go to Questions →</div>
+        </Link>
+
+        <Link className="card cardLinkBlock homeSecondary" to="/passages">
+          <div className="cardTitle">Passages</div>
           <div className="cardText">
-            What this site is (and isn’t), and how to take your next steps.
+            Key texts from the Story and Questions—organized by category, with
+            simple explanations and sources.
           </div>
-          <Link className="cardLink" to="/about">
-            Go to About →
-          </Link>
-        </div>
+          <div className="cardCta">Go to Passages →</div>
+        </Link>
       </section>
     </div>
   );

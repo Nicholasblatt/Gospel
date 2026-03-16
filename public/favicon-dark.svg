@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Gospel</title>
+  <!-- Dark blue circle (site bg) + white cross -->
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1224" />
+      <stop offset="1" stop-color="#070a12" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" />
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2" />
+
+  <rect x="29" y="14" width="6" height="36" rx="2" fill="#ffffff" />
+  <rect x="20" y="26" width="24" height="6" rx="2" fill="#ffffff" />
+</svg>

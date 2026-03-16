@@ -18,15 +18,21 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
   {
     id: "god",
     title: "God",
-    subtitle: "Holy • righteous • Judge",
+    subtitle: "Creator • holy • righteous • Judge",
     summary:
-      "The gospel starts with God: He is holy, righteous, morally perfect, pure, and just. He defines good and will judge evil without compromise.",
+      "The gospel starts with God: He is the uncreated Creator of all. He is holy, righteous, morally perfect, pure, and just. He defines good and will judge evil without compromise.",
     points: [
+      "God is uncreated: He has no beginning, and He made everything that exists.",
       "God is holy: set apart from all sin, perfect in purity and truth.",
       "God is righteous: He always does what is right, and His standard is not negotiable.",
       "God is just: He will not clear the guilty by ignoring sin.",
     ],
     scriptures: [
+      {
+        label: "Genesis 1:1 (ESV)",
+        translation: "ESV",
+        url: "https://www.esv.org/Genesis+1:1/",
+      },
       {
         label: "Isaiah 6:3 (ESV)",
         translation: "ESV",
@@ -51,9 +57,10 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
     summary:
       "You were made by God and for God. As His image-bearer, your purpose is to glorify Him, worship Him, and enjoy Him forever.",
     points: [
-      "Humanity is created in God’s image: real dignity, moral accountability, and a created purpose.",
-      "You were made to worship. You will always live for something, and it was designed to befor God.",
-      "True life and joy are found in God Himself; sin is turning that worship inward and downward.",
+      "Humanity is created in God’s image. We were made to worship.",
+      "You will always live for something, and we were designed to live for God.",
+      "True life and joy are found in God Himself.",
+      "We are accountable for our thoughts and actions."
     ],
     scriptures: [
       {
@@ -76,13 +83,13 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
   {
     id: "sin",
     title: "Sin",
-    subtitle: "Rebellion • guilt • slavery • deserving judgment",
+    subtitle: "Rebellion • imperfection • slavery",
     summary:
-      "Sin is not merely mistakes or bad habits, it’s rebellion against God. " +
-      "The outcome is not only consequences in this life, " +
-      "but what we earn: death and eternal punishment, separation from God in hell.",
+      "Sin is anything we think, say, or do that is not in line with God's perfect standard. " +
+      "Sinful behavior not only has consequences in this life, " +
+      "but leads to death, eternal punishment, and separation from God in hell.",
     points: [
-      "Sin is lawlessness: falling short of God’s standard and breaking His commands.",
+      "Sin is lawlessness: falling short of God’s perfect standard and breaking His commands.",
       "Sin corrupts the heart, not just behavior; we’re unable to fix ourselves.",
       "The wages of sin is death: what we earn is judgment. Physical death and eternal separation from God in hell.",
     ],
@@ -109,7 +116,7 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
     title: "Jesus Christ",
     subtitle: "God the Son • true man • sinless Savior",
     summary:
-      "Jesus Christ is a real man in history and also truly God. He lived a sinless, perfect life. He humbled Himself: not clinging to His rights, but taking the form of a servant to save sinners.",
+      "Jesus Christ is a real man in history and also truly God. He lived a sinless, perfect life. He humbled Himself: not clinging to His rights as God, but taking the form of a servant to save sinners.",
     points: [
       "Truly God and truly man: the eternal Son took on humanity without ceasing to be God.",
       "He lived a sinless, perfect life—fully obedient, fulfilling God’s every law.",
@@ -205,7 +212,7 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
     points: [
       "Repent: turn from sin and self-rule to God. Agreeing with Him about your guilt and need.",
       "Believe: trust in the Lord Jesus Christ alone to save you. His death and resurrection, not your works.",
-      "Be saved by grace: God justifies the ungodly through faith. Crediting you with a righteousness not your own, but Christ’s righteousness.",
+      "Assurance: if you have repented and believed in Christ, your confidence is not in your works but in Christ’s righteousness and God’s promise that there is now no condemnation for those who are in Christ Jesus.",
     ],
     scriptures: [
       {
@@ -222,35 +229,6 @@ export const GOSPEL_CHAPTERS: GospelChapter[] = [
         label: "Romans 4:5 (ESV)",
         translation: "ESV",
         url: "https://www.esv.org/Romans+4:5/",
-      },
-      {
-        label: "Philippians 3:9 (ESV)",
-        translation: "ESV",
-        url: "https://www.esv.org/Philippians+3:9/",
-      },
-    ],
-  },
-  {
-    id: "assurance",
-    title: "Assurance",
-    subtitle: "Grace is secure • fruit is real • Christ is sufficient",
-    summary:
-      "True believers can have assurance—not by trusting their works, but by trusting Christ’s finished work and God’s promises. And real faith produces real fruit.",
-    points: [
-      "Assurance rests on Christ and God’s Word (not feelings, not a perfect track record).",
-      "We don’t do works to earn salvation. Faith that saves is never alone; it produces fruit.",
-      "If you’re unsure, look to Christ, believe His promises, and pursue obedience.",
-    ],
-    scriptures: [
-      {
-        label: "1 John 2:3–6 (ESV)",
-        translation: "ESV",
-        url: "https://www.esv.org/1+John+2:3-6/",
-      },
-      {
-        label: "James 2:17 (ESV)",
-        translation: "ESV",
-        url: "https://www.esv.org/James+2:17/",
       },
       {
         label: "Philippians 3:9 (ESV)",

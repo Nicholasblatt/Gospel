@@ -63,6 +63,23 @@ a {
   text-decoration: none;
 }
 
+.prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  color: rgba(110, 231, 255, 0.92);
+}
+
+.prose a:focus {
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0 4px rgba(110, 231, 255, 0.12);
+}
+
 .appShell {
   min-height: 100%;
   display: grid;
@@ -89,9 +106,10 @@ a {
 }
 
 .brand {
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  padding: 8px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
   border-radius: 12px;
   background: linear-gradient(
     90deg,
@@ -99,6 +117,21 @@ a {
     rgba(155, 255, 176, 0.12)
   );
   border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.brandIcon {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.brand:hover {
+  border-color: rgba(110, 231, 255, 0.22);
+  background: rgba(110, 231, 255, 0.08);
+}
+
+.brand:focus {
+  outline: none;
+  border-color: rgba(110, 231, 255, 0.35);
+  box-shadow: 0 0 0 4px rgba(110, 231, 255, 0.10);
 }
 
 .nav {
@@ -138,11 +171,8 @@ a {
 .hero {
   padding: 34px 22px;
   border-radius: var(--radius);
-  background: linear-gradient(
-    135deg,
-    rgba(110, 231, 255, 0.10),
-    rgba(155, 255, 176, 0.08)
-  );
+  /* Keep this section readable but not "louder" than the primary Story tile. */
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: var(--shadow);
 }
@@ -241,6 +271,81 @@ a {
   font-weight: 650;
 }
 
+.cardLinkBlock {
+  display: block;
+  text-decoration: none;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease;
+}
+
+.cardLinkBlock:hover {
+  transform: translate3d(0, -2px, 0);
+  border-color: rgba(110, 231, 255, 0.22);
+  background: rgba(110, 231, 255, 0.04);
+}
+
+.cardLinkBlock:focus {
+  outline: none;
+  border-color: rgba(110, 231, 255, 0.35);
+  box-shadow: 0 0 0 4px rgba(110, 231, 255, 0.10);
+}
+
+.cardCta {
+  margin-top: 10px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.homeGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.homePrimary {
+  grid-column: span 12;
+  border-color: rgba(110, 231, 255, 0.34);
+  background: linear-gradient(
+    135deg,
+    rgba(110, 231, 255, 0.16),
+    rgba(155, 255, 176, 0.10)
+  );
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(110, 231, 255, 0.10);
+}
+
+.homePrimary .cardTitle {
+  font-size: 22px;
+  letter-spacing: -0.3px;
+}
+
+.homePrimary .cardCta {
+  color: rgba(155, 255, 176, 0.92);
+}
+
+.homePrimary.cardLinkBlock:hover {
+  border-color: rgba(155, 255, 176, 0.28);
+  background: linear-gradient(
+    135deg,
+    rgba(110, 231, 255, 0.18),
+    rgba(155, 255, 176, 0.12)
+  );
+}
+
+.homeSecondary {
+  grid-column: span 12;
+}
+
+@media (min-width: 860px) {
+  .homeSecondary {
+    grid-column: span 6;
+  }
+}
+
 .prose p {
   line-height: 1.65;
   color: var(--muted);
@@ -281,6 +386,45 @@ a {
   margin: 14px 0 18px;
 }
 
+.qaControls {
+  margin: 14px 0 14px;
+}
+
+.qaControlsRow {
+  display: grid;
+  gap: 10px;
+}
+
+.qaControlsMain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.qaMeta {
+  font-size: 13px;
+}
+
+.qaSelect {
+  width: min(320px, 100%);
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  outline: none;
+}
+
+.qaSelect:focus {
+  border-color: rgba(110, 231, 255, 0.35);
+  box-shadow: 0 0 0 4px rgba(110, 231, 255, 0.10);
+}
+
+.qaSelect:disabled {
+  opacity: 0.55;
+}
+
 .qaList {
   display: grid;
   gap: 10px;
@@ -306,6 +450,13 @@ a {
   line-height: 1.6;
 }
 
+.qaPager {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .srOnly {
   position: absolute;
   width: 1px;
@@ -324,111 +475,10 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 979px) {
-  .storyPage {
-    padding-bottom: 92px; /* room for the mobile pager */
-  }
-}
-
 .storyShell {
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
-}
-
-@media (min-width: 980px) {
-  .storyShell {
-    grid-template-columns: 360px 1fr;
-    align-items: start;
-  }
-}
-
-.storyNav {
-  position: sticky;
-  top: 74px;
-  align-self: start;
-}
-
-@media (max-width: 979px) {
-  .storyNav {
-    /* On mobile, sticky nav overlaps the content while scrolling; keep it in normal flow. */
-    position: relative;
-    top: auto;
-    z-index: auto;
-  }
-}
-
-.storyNavCard {
-  padding: 16px 14px;
-  border-radius: var(--radius);
-  background: var(--panel);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-@media (max-width: 979px) {
-  .storyNavCard {
-    padding: 12px 12px;
-    border-radius: 14px;
-  }
-}
-
-.storyNavTitle {
-  font-weight: 850;
-  letter-spacing: -0.2px;
-  margin-bottom: 6px;
-}
-
-.storyNavSubtitle {
-  color: var(--muted);
-  line-height: 1.5;
-  font-size: 13.5px;
-  margin-bottom: 12px;
-}
-
-@media (max-width: 979px) {
-  .storyNavSubtitle {
-    display: none;
-  }
-}
-
-.storyNavDetails {
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.03);
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-
-.storyNavSummary {
-  list-style: none;
-  cursor: pointer;
-  padding: 10px 12px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.storyNavSummary::-webkit-details-marker {
-  display: none;
-}
-
-.storyNavSummaryLabel {
-  font-weight: 750;
-}
-
-.storyNavSummaryActive {
-  color: var(--muted2);
-  font-size: 12.5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 45%;
-}
-
-.storyNavDetails[open] .storyNavSummary {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .storyProgress {
@@ -446,110 +496,19 @@ a {
   background: linear-gradient(90deg, rgba(110, 231, 255, 0.9), rgba(155, 255, 176, 0.85));
 }
 
-.storyNavList {
-  display: grid;
-  gap: 6px;
-  padding: 8px;
-}
-
-.storyNavListDesktop {
-  padding: 0;
-  margin-bottom: 12px;
-}
-
-@media (max-width: 979px) {
-  .storyNavListDesktop {
-    display: none;
-  }
-}
-
-@media (min-width: 980px) {
-  .storyNavDetails {
-    display: none;
-  }
-}
-
-.storyNavItem {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  padding: 10px 10px;
-  border-radius: 14px;
-  border: 1px solid transparent;
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
-}
-
-.storyNavItem:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-.storyNavItem.active {
-  background: rgba(110, 231, 255, 0.08);
-  border-color: rgba(110, 231, 255, 0.28);
-}
-
-.storyNavDot {
-  margin-top: 7px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  flex: 0 0 auto;
-}
-
-.storyNavItem.active .storyNavDot {
-  background: rgba(110, 231, 255, 0.75);
-  border-color: rgba(110, 231, 255, 0.50);
-}
-
-.storyNavText {
-  display: grid;
-  gap: 2px;
-}
-
-.storyNavItemTitle {
-  font-weight: 750;
-  letter-spacing: -0.1px;
-}
-
-.storyNavItemSubtitle {
-  color: var(--muted2);
-  font-size: 12.5px;
-  line-height: 1.35;
-}
-
-.storyNavButtons {
-  display: flex;
-  gap: 10px;
-}
-
-.storyNavButtons .button {
-  flex: 1 1 0;
-}
-
-@media (max-width: 979px) {
-  .storyNavButtons {
-    display: none;
-  }
+/* Story header */
+.storyHeader {
+  padding: 10px 6px 0;
 }
 
 .storyScroller {
   display: grid;
   gap: 14px;
-  /* Allow the last chapter ("Assurance") to scroll high enough to be selectable/active on tall screens */
-  padding-bottom: 40vh;
 }
 
 @media (max-width: 979px) {
   .storyScroller {
     gap: 14px;
-    padding-bottom: 22vh;
   }
 }
 
@@ -611,9 +570,10 @@ a {
 
 @media (min-width: 980px) {
   .storySectionInner {
-    padding: 30px 26px;
-    min-height: 72vh; /* taller cards on desktop */
-    justify-content: center;
+    padding: 34px 30px;
+    min-height: auto; /* remove forced empty space on desktop */
+    justify-content: flex-start;
+    gap: 12px;
   }
 }
 
@@ -628,6 +588,28 @@ a {
 
   .storyRefs {
     justify-content: center;
+  }
+}
+
+/* Desktop typography + tighter rhythm (keep mobile unchanged) */
+@media (min-width: 980px) {
+  .storyH2 {
+    font-size: clamp(40px, 3.6vw, 64px);
+  }
+
+  .storySub {
+    font-size: 18px;
+    margin-top: -6px;
+  }
+
+  .storySummary {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .storyPoints {
+    font-size: 18px;
+    margin-top: 6px; /* closer to the main text */
   }
 }
 @media (max-width: 979px) {
@@ -762,36 +744,4 @@ a {
     transform: none;
   }
 }
-
-@media (min-width: 980px) {
-  .storyNavSummary {
-    display: none;
-  }
-}
-
-.storyMobilePager {
-  display: none;
-}
-
-@media (max-width: 979px) {
-  .storyMobilePager {
-    display: flex;
-    position: fixed;
-    left: 12px;
-    right: 12px;
-    bottom: calc(12px + env(safe-area-inset-bottom));
-    gap: 10px;
-    padding: 10px;
-    border-radius: 16px;
-    background: rgba(7, 10, 18, 0.72);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(12px);
-    z-index: 30;
-  }
-
-  .storyMobilePager .button {
-    flex: 1 1 0;
-  }
-}
-
 
